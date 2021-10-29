@@ -1,0 +1,34 @@
+{
+  "name": "linkapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --inspect --ignore-watch node_modules src/server.ts",
+    "build": "rimraf ./build && tsc && cp .env ./dist"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "axios": "^0.24.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-prom-bundle": "^6.4.1",
+    "helmet": "^4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "5.13.7",
+    "prom-client": "^14.0.0",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cors": "^2.8.12",
+    "@types/jsonwebtoken": "^8.5.5",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^16.11.6",
+    "ts-node": "^10.4.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.4"
+  }
+}
