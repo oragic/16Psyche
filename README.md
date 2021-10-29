@@ -46,11 +46,11 @@ OBS, so porossiga caso tenha o [npm] ou [yarn] instalado
 
 ## Executando o ambiente de desenvolvimento no navegador
 
-1 -> `yarn dev`
+2 -> `yarn dev`
 
 ## Executando o build
 
-1 -> `yarn build`
+3 -> `yarn build`
 
 caso execute o projeto com pm2 lembre-se de mover o ecosystem para pasta dist
 
@@ -59,3 +59,7 @@ para criar um tunel da sua maquina para a web, ou hospedar em alguma solução d
 desenvolvimento dessa aplicação foi utilizao ngrok para criar um tunel, pois é uma solulão muito simples,
 tendo apenas que baixar o binario e executar o seguinte comando "./ngrock http PORT". siga esse guia para 
 entender como configurar o webhook.
+
+
+Esse progeto possui integração com prometheus,as métricas para passar a observar o desempenho estão em:
+-> BASEURL/metrics
